@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Eleonora Innocenti Sedili`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Portfolio and website for Eleonora Innocenti Sedili`,
     author: `@vinnocenti`,
   },
   plugins: [
@@ -32,7 +32,7 @@ module.exports = {
             options: {
               maxWidth: 590,
             },
-          }
+          },
         ],
       },
     },
@@ -41,23 +41,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Eleonora Innocenti Sedili`,
+        short_name: `Eleonora`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#424241`,
+        theme_color: `#424241`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
 
     {
-      resolve: 'gatsby-plugin-i18n',
+      resolve: "gatsby-plugin-i18n",
       options: {
-        langKeyDefault: 'en',
+        langKeyDefault: "en",
         useLangKeyLayout: false,
         markdownRemark: {
-          postPage: 'src/templates/blog-post.js',
+          postPage: "src/templates/blog-post.js",
           query: `
             {
               allMarkdownRemark {
@@ -71,11 +71,11 @@ module.exports = {
                 }
               }
             }
-          `
-        }
-      }
+          `,
+        },
+      },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-playground`
+    `gatsby-plugin-playground`,
   ],
 }
