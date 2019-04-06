@@ -11,7 +11,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: `project`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
     {
@@ -47,32 +61,7 @@ module.exports = {
         background_color: `#424241`,
         theme_color: `#424241`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`,
-      },
-    },
-
-    {
-      resolve: "gatsby-plugin-i18n",
-      options: {
-        langKeyDefault: "en",
-        useLangKeyLayout: false,
-        markdownRemark: {
-          postPage: "src/templates/blog-post.js",
-          query: `
-            {
-              allMarkdownRemark {
-                edges {
-                  node {
-                    fields {
-                      slug,
-                      langKey
-                    }
-                  }
-                }
-              }
-            }
-          `,
-        },
+        icon: `content/images/logo.png`,
       },
     },
     `gatsby-plugin-offline`,

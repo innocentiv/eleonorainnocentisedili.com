@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import Image from "../../components/image"
+import SEO from "../../components/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -10,7 +10,7 @@ const IndexPage = () => (
     <div style={{ margin: "auto", maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <p style={{ textAlign: "center" }}>Work in progress</p>
+    <p style={{ textAlign: "center" }}>Lavoro in progresso</p>
     <p>
       E’ il 1991 e una giovane coppia bolognese sta tornando a casa la sera
       della vigilia della Befana. Fa molto freddo e forse è per il ghiaccio
