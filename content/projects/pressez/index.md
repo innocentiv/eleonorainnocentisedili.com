@@ -1,19 +1,30 @@
 ---
 title: Pressez
-date: "2015-05-06T23:46:37.121Z"
+date: "2017-05-06T23:46:37.121Z"
 description: ""
 image: "pressez1.png"
 category: ["installation"]
 ---
 
-![back to the future](back_to_the_future.jpg)
+<iframe src="https://player.vimeo.com/video/233209806" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-La mostra THE PERFECT CANDIDATE inaugura la prima volta al Brooklyn Museum di New York il 6 novembre 2018, esattamente sei anni dal giorno in cui Will Cavalieri sarebbe dovuto diventare Presidente degli Stati Uniti d’America.
-La mostra THE PERFECT CANDIDATE è, infatti, una retrospettiva dedicata ai momenti più salienti della vita del candidato democratico per la Casa Bianca.
-Le origini, la famiglia, la storia, le campagne elettorali, gli scandali, i successi e il triste epilogo di uno dei personaggi più discussi del XXI secolo.
-La prima fermata europea per la mostra non poteva che essere l’Italia, terra d’origine di Cavalieri, dopo le tappe di Washignton D.C. e San Francisco.
+Video | Video
+Durata 00:06:46 minuti | 00:06:46 minute
 
-![cavalieri](obama_like.jpg)
+Olivier Massien fu rinchiuso in un campo di prigionia durante la Seconda Guerra Mondiale e fu lì che compose i suoi lavori di maggior rilievo.
+La musica di Massien dona pace, anche quando la pace, per qualsiasi motivo, non fa parte del proprio mondo.
+Questo componimento rappresenta la via di fuga per un uomo che è stato costretto in un luogo che non gli apparteneva, una forzatura, che tuttavia non è riuscita ad indebolire la forza creatrice e lo spirito che albergavano dentro di lui.
+Nei video art la location è fondamentale, scegliere la sede del MIT [Movimento Identità Transessuale] non è stato un caso.
 
-Ogni quattro anni il mondo segue con il fiato sospeso la lunga corsa alla Casa Bianca: le Elezioni Presidenziali. Pur essendo un affare tutto americano, sono l’evento politico che più di ogni altro influenza le sorti economiche e politiche del mondo intero. Le campagne elettorali americane sono nella loro specificità eventi di grande teatro, forte emotività e laboratori di strategia mediatica.
-Partendo dalla prima campagna di Will Cavalieri come Membro della Camera dei Rappresentanti per il 12th distretto dello Stato di New York nel 2008, al discorso di risposta sullo stato dell’Unione da parte dei democratici nel 2010, alla campagna presidenziale del 2012. The THE PERFECT CANDIDATE ripercorre la storia di queste campagne elettorali utilizzando il fotogiornalismo, video interviste, discorsi e la produzione di gadget e slogan, trasformandosi in un’occasione per fare un viaggio nel sensazionale e affascinante mondo della propaganda.
+![pressez](pressez1.png)
+
+Doveva essere un luogo che rappresentasse coloro che, in qualche modo, considerano il proprio sé confinato in uno spazio che non gli appartiene o che gli risulta forzato, ma che trovano ugualmente la possibilità di sprigionare il proprio essere. Un luogo di nuova possibilità, di rinascita. Laddove il sé può esprimersi in uno spazio coerente con la propria natura, la spinta creativa può dilatarsi armonicamente nel fuori da sé; ciò tuttavia non significa che se ne avverta la necessità o l’urgenza.
+Una costrizione di qualsivoglia natura può, invece, forzare la necessità e l’urgenza di esplorare le profondità del proprio sé, per trovare una via alternativa per dargli voce, generando, talvolta, inaspettate meraviglie.
+
+![pressez](pressez2.jpg)
+
+Pressez, l’imperativo del francese presser ovvero pressare o stringere, è un’indicazione di interpretazione che Massien appunta nella partitura del suo brano Abîme des Oiseaux per indicare un’accelerazione del movimento. Il termine indica quindi la costrizione ma evoca anche, nella sfumatura che cogliamo dalla scrittura musicale, la forza incalzante che spinge verso la liberazione.
+Associazione Onlus, fondata nel 1982 a Bologna, che difende e sostiene i diritti delle persone transessuali, travestiti, transgender e genderqueer.
+Nota al grande pubblico per la trasmissione #ViteDivergenti – Storie di un Altro Genere, un progetto realizzato in collaborazione con RealTime.
+
+![pressez](pressez3.png)

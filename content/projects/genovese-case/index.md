@@ -1,19 +1,32 @@
 ---
 title: Genovese
-date: "2015-05-06T23:46:37.121Z"
+date: "2018-08-06T23:46:37.121Z"
 description: ""
 image: "genovese1.png"
 category: ["installation"]
 ---
 
-![back to the future](back_to_the_future.jpg)
+![genovese](genovese1.png)
 
-La mostra THE PERFECT CANDIDATE inaugura la prima volta al Brooklyn Museum di New York il 6 novembre 2018, esattamente sei anni dal giorno in cui Will Cavalieri sarebbe dovuto diventare Presidente degli Stati Uniti d’America.
-La mostra THE PERFECT CANDIDATE è, infatti, una retrospettiva dedicata ai momenti più salienti della vita del candidato democratico per la Casa Bianca.
-Le origini, la famiglia, la storia, le campagne elettorali, gli scandali, i successi e il triste epilogo di uno dei personaggi più discussi del XXI secolo.
-La prima fermata europea per la mostra non poteva che essere l’Italia, terra d’origine di Cavalieri, dopo le tappe di Washignton D.C. e San Francisco.
+Installazione | Installation
+Esigenze di installazione variabili | Variable installation requirements
+16 distrutti | destroyed
 
-![cavalieri](obama_like.jpg)
+![genovese](genovese2.png)
 
-Ogni quattro anni il mondo segue con il fiato sospeso la lunga corsa alla Casa Bianca: le Elezioni Presidenziali. Pur essendo un affare tutto americano, sono l’evento politico che più di ogni altro influenza le sorti economiche e politiche del mondo intero. Le campagne elettorali americane sono nella loro specificità eventi di grande teatro, forte emotività e laboratori di strategia mediatica.
-Partendo dalla prima campagna di Will Cavalieri come Membro della Camera dei Rappresentanti per il 12th distretto dello Stato di New York nel 2008, al discorso di risposta sullo stato dell’Unione da parte dei democratici nel 2010, alla campagna presidenziale del 2012. The THE PERFECT CANDIDATE ripercorre la storia di queste campagne elettorali utilizzando il fotogiornalismo, video interviste, discorsi e la produzione di gadget e slogan, trasformandosi in un’occasione per fare un viaggio nel sensazionale e affascinante mondo della propaganda.
+Il caso Genovese è un episodio di cronaca del 1964 riguardante l’omicidio di una giovane ragazza, Kitty Genovese. Venne ripetutamente accoltellata nel cortile del proprio isolato, a New York, senza che nessun vicino intervenisse. Le circostanze del suo assassinio e la mancata reazione da parte dei suoi vicini, divennero il simbolo di un fenomeno psicologico noto come effetto spettatore o sindrome Genovese.
+In qualche modo, anche oggi assistiamo al medesimo fenomeno.
+La mappa di Facebook Live (o Facebook Live Map) è un portale creato dal social network di Mark Zuckerberg che permette di accedere a una mappa interattiva che mostra tutte le dirette pubbliche in svolgimento nel mondo su Facebook, tramite la sua applicazione di live streaming. <br />Nato per competere sopratutto con Youtube, pare che in realtà la diretta social sia diventato uno strumento di spettacolarizzazione per atti di violenza subiti o autoimposti.
+
+![genovese](genovese3.png)
+
+I sedici smarthphone distrutti rappresentano sedici persone (ogni smarthphone è assocciato ad una vittima, ed è stato danneggiato nello stesso modo in cui è deceduta la persona che rappresenta) hanno perso la vita in diretta mentre questo video veniva visualizzato, non solo da amici o parenti, ma anche da chi era connesso a Facebook Live Map. Tuttavia non c’è stata nessuna reazione, nessun tentativo di salvataggio o di avvisare le autorità, sebbene stessero sempre guardando in molti.
+
+![genovese](genovese4.png)
+
+La mappa di Facebook Live è stata, come per la Genovese, un cortile di vicini silenziosi ma curiosi che sentivano, vedevano ma che decisero di rimanere spettatori impassibili.
+Gli smartphones distrutti sono attaccati ad una parete sulla quale viene proiettata la mappa di Facebook Live in diretta. Quando il cursore tocca un disco luminoso azzurro, ci fa visualizzare un video in diretta che può essere a Bangkok come a Washington D.C.
+
+![genovese](genovese5.png)
+
+Contemporaneamente, il fruitore è esso stesso in diretta (quindi rappresentato da un disco luminoso azzurro sulla mappa nel luogo in cui si trova) perché viene filmato, a sua volta, dall’unico smartphone funzionante dell’intera installazione ambientale. Creando un gioco di specchi infinito.

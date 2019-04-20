@@ -1,12 +1,13 @@
 ---
-title: A cuor leggero (Titolo Provvisorio)
+title: Zugzwang
 date: "2015-05-06T23:46:37.121Z"
 description: ""
-image: "cuore1.jpg"
+image: "scacchi1.jpg"
 category: ["installation"]
 ---
 
-![cuore](cuore1.jpg)
+![scacchi1](scacchi1.jpg)
+![scacchi2](scacchi2.jpg)
 
 La mostra THE PERFECT CANDIDATE inaugura la prima volta al Brooklyn Museum di New York il 6 novembre 2018, esattamente sei anni dal giorno in cui Will Cavalieri sarebbe dovuto diventare Presidente degli Stati Uniti d’America.
 La mostra THE PERFECT CANDIDATE è, infatti, una retrospettiva dedicata ai momenti più salienti della vita del candidato democratico per la Casa Bianca.
