@@ -1,47 +1,32 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import Title from "./title"
 
-const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.background};
-  padding: 1em;
-  min-height: 30vh;
-  margin-bottom: 2em;
+export const HeaderWrapper = styled.header`
+  background-color: ${props => props.theme.header.background};
+  position: sticky;
+  top: 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  z-index: 1;
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.white};
+    font-weight: bold;
+  }
 `
 
-const FirstWord = styled.span`
-  color: ${props => props.theme.colors.gray};
-`
-
-const SecondWord = styled.span`
-  color: ${props => props.theme.colors.lightgray};
-`
-
-const ThirdWord = styled.span`
-  color: ${props => props.theme.colors.white};
-`
-
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderWrapper>
-    <Link to="/" style={{ textDecoration: `none` }}>
-      <h1>
-        <FirstWord>Eleonora </FirstWord>
-        <SecondWord>Innocenti </SecondWord>
-        <ThirdWord>Sedili</ThirdWord>
-      </h1>
+    <Link to="/">
+      <Title />
     </Link>
+    <Link to="/about">About</Link>
   </HeaderWrapper>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
