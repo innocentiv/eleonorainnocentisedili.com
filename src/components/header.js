@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Title from "./title"
+import Menubar from "./menubar"
+import { mixin } from "./theme"
 
 export const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.header.background};
@@ -10,8 +12,9 @@ export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   z-index: 1;
+  ${mixin.boxShadow}
 
   a {
     text-decoration: none;
@@ -25,7 +28,7 @@ const Header = () => (
     <Link to="/">
       <Title />
     </Link>
-    <Link to="/about">About</Link>
+    <Menubar />
   </HeaderWrapper>
 )
 

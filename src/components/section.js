@@ -6,7 +6,7 @@ export const Section = styled.section`
     props.fullWidth ? "100%" : props.theme.content.maxWidth};
   width: 100%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5em 1em;
 `
 
 export default Section

@@ -6,15 +6,29 @@ export const sizes = {
   phablet: 576,
 }
 
-export const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (min-width: ${sizes[label] / 16}em) {
+export const media = {
+  ...Object.keys(sizes).reduce((acc, label) => {
+    acc[label] = (...args) => css`
+      @media (min-width: ${sizes[label] / 16}em) {
+        ${css(...args)}
+      }
+    `
+
+    return acc
+  }, {}),
+  hover: type => (...args) => css`
+    @media (hover: ${type}) {
       ${css(...args)}
     }
-  `
+  `,
+}
 
-  return acc
-}, {})
+export const mixin = {
+  boxShadow: () =>
+    `box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);`,
+  boxShadowHover: () =>
+    `box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
+}
 
 const theme = {
   header: {
@@ -22,7 +36,7 @@ const theme = {
   },
   content: {
     background: "#e3e3e3",
-    maxWidth: "960px",
+    maxWidth: "1200px",
   },
   colors: {
     gray: "#7b7b7b",

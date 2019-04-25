@@ -8,12 +8,25 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import theme from "./theme"
 
 import Header from "./header"
 import Content from "./content"
 import Section from "./section"
+import Footer from "./footer"
+
+const GlobalStyle = createGlobalStyle`
+  html, body, #___gatsby, #___gatsby > div {
+    height: 100%;
+  }
+`
+
+const SiteWrapper = styled.div`
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +41,14 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
-        <>
+        <SiteWrapper>
+          <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           <Content>
             <Section>{children}</Section>
-            <Section color="lightgray" fullWidth>
-              Work in progress
-            </Section>
-            <footer />
           </Content>
-        </>
+          <Footer />
+        </SiteWrapper>
       </ThemeProvider>
     )}
   />

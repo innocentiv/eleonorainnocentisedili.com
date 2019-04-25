@@ -11,11 +11,13 @@ export const ProjectGridWrapper = styled.div`
     width: 100%;
 
     ${media.phablet`
-      width: 50%;
+      margin: 2%;
+      width: 46%;
     `}
 
     ${media.tablet`
-      width: 33%;
+      margin: 2%;
+      width: 29.3%;
     `}
   }
 `
