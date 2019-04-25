@@ -10,6 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              type
             }
           }
         }
@@ -19,7 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/project.js`),
+        component: path.resolve(`./src/templates/${node.fields.type}.js`),
         context: {
           // Data passed to context is available in page queries as GraphQL variables.
           slug: node.fields.slug,
@@ -33,14 +34,27 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode }).replace(
-      /(.+)index.([a-zA-Z]{2})\/$/,
-      `$2$1`
-    )
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    const regex = /\/content\/([a-zA-Z-]*?)\/([a-zA-Z-]*?)\/index(?:\.([a-zA-Z]{2}))?\.md$/
+    const [match, type, name, lang] = node.fileAbsolutePath.match(regex)
+
+    if (match) {
+      const slug = lang ? `/${lang}/${name}` : `/${name}`
+
+      createNodeField({
+        node,
+        name: `slug`,
+        value: slug,
+      })
+      createNodeField({
+        node,
+        name: `type`,
+        value: type,
+      })
+      createNodeField({
+        node,
+        name: `lang`,
+        value: lang || `it`,
+      })
+    }
   }
 }

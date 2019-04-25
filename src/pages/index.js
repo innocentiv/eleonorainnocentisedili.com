@@ -26,7 +26,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { type: { eq: "projects" }, lang: { eq: "it" } } }
+    ) {
       edges {
         node {
           excerpt

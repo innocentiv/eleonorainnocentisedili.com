@@ -41,7 +41,11 @@ const Menu = () => {
   return (
     <>
       <MenuButton onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <MdClose /> : <MdMenu />}
+        {menuOpen ? (
+          <MdClose aria-label="Close Menu" />
+        ) : (
+          <MdMenu aria-label="Open Menu" />
+        )}
       </MenuButton>
       {menuOpen && (
         <MenuWrapper>
