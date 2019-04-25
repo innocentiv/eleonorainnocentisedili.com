@@ -1,8 +1,8 @@
-import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { MdMenu, MdClose } from "react-icons/md"
 import { media, mixin } from "./theme"
+import MenuItem from "./menuitem"
 
 export const MenuWrapper = styled.nav`
   position: absolute;
@@ -15,12 +15,9 @@ export const MenuWrapper = styled.nav`
   text-align: center;
   ${mixin.boxShadow}
 
-  a {
-    padding: 1em;
+  ${MenuItem} {
     display: block;
-    text-decoration: none;
-    color: ${props => props.theme.colors.white};
-    font-weight: bold;
+    padding: 1em;
   }
 `
 
@@ -48,10 +45,10 @@ const Menu = () => {
       </MenuButton>
       {menuOpen && (
         <MenuWrapper>
-          <Link to="/bio">Bio</Link>
-          <Link to="/contacts">Contatti</Link>
-          <Link to="/">Opere</Link>
-          <Link to="/texts">Testi</Link>
+          <MenuItem to="/bio">Bio</MenuItem>
+          <MenuItem to="/contacts">Contatti</MenuItem>
+          <MenuItem to="/">Opere</MenuItem>
+          <MenuItem to="/texts">Testi</MenuItem>
         </MenuWrapper>
       )}
     </>

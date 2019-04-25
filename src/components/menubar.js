@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { media } from "./theme"
+import MenuItem from "./menuitem"
 
 export const MenubarWrapper = styled.nav`
   display: none;
@@ -10,23 +10,17 @@ export const MenubarWrapper = styled.nav`
     display: block;
   `};
 
-  a {
-    text-decoration: none;
-    color: ${props => props.theme.colors.white};
-    font-weight: bold;
-  }
-
-  a + a {
+  ${MenuItem} + ${MenuItem} {
     margin-left: 1em;
   }
 `
 
 const Menubar = () => (
   <MenubarWrapper>
-    <Link to="/bio">Bio</Link>
-    <Link to="/contacts">Contatti</Link>
-    <Link to="/">Opere</Link>
-    <Link to="/texts">Testi</Link>
+    <MenuItem to="/bio">Bio</MenuItem>
+    <MenuItem to="/contacts">Contatti</MenuItem>
+    <MenuItem to="/">Opere</MenuItem>
+    <MenuItem to="/texts">Testi</MenuItem>
   </MenubarWrapper>
 )
 
