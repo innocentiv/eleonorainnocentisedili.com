@@ -8,6 +8,7 @@ export const ProjectGridWrapper = styled.div`
   flex-wrap: wrap;
 
   ${ProjectWrapper} {
+    margin: 3% 0;
     width: 100%;
 
     ${media.phablet`
@@ -15,7 +16,7 @@ export const ProjectGridWrapper = styled.div`
       width: 46%;
     `}
 
-    ${media.tablet`
+    ${media.desktop`
       margin: 2%;
       width: 29.3%;
     `}

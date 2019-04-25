@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Title from "./title"
+import Menu from "./menu"
 import Menubar from "./menubar"
 import { mixin } from "./theme"
 
@@ -29,6 +30,7 @@ const Header = () => (
       <Title />
     </Link>
     <Menubar />
+    <Menu />
   </HeaderWrapper>
 )
 

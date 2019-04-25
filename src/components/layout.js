@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
   html, body, #___gatsby, #___gatsby > div {
     height: 100%;
   }
+
+  a {
+    color: inherit;
+  }
 `
 
 const SiteWrapper = styled.div`
