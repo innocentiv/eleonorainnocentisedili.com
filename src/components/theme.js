@@ -32,7 +32,7 @@ export const mixin = {
 
 const theme = {
   header: {
-    background: "#2b2b2b",
+    background: "#272526",
   },
   content: {
     background: "#e3e3e3",

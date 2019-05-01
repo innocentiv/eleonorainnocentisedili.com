@@ -4,13 +4,13 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.5,
   scaleRatio: 2,
-  headerFontFamily: ["Raleway", "sans-serif"],
-  bodyFontFamily: ["Raleway", "sans-serif"],
+  headerFontFamily: ["Questrial", "sans-serif"],
+  bodyFontFamily: ["Questrial", "sans-serif"],
   includeNormalize: true,
   googleFonts: [
     {
-      name: "Raleway",
-      styles: ["400", "700"],
+      name: "Questrial",
+      styles: ["400"],
     },
   ],
 })
