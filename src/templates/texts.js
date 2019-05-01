@@ -16,8 +16,6 @@ class TextTemplate extends React.Component {
           title={frontmatter.title}
           description={frontmatter.description || excerpt}
         />
-        <h1>{frontmatter.title}</h1>
-        {frontmatter.date && <p>{frontmatter.date}</p>}
         <article dangerouslySetInnerHTML={{ __html: html }} />
       </Layout>
     )

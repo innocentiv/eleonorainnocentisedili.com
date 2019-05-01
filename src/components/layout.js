@@ -24,6 +24,14 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
   }
+
+  .gatsby-resp-image-wrapper {
+    width: 100%
+  }
+
+  .gatsby-resp-image-grid .gatsby-resp-image-wrapper {
+    max-width: 720px !important;
+  }
 `
 
 const SiteWrapper = styled.div`

@@ -6,9 +6,14 @@ import ProjectPreview, { ProjectWrapper } from "./projectPreview"
 export const ProjectGridWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin: -3%;
+
+  ${media.phablet`
+    margin: -2%;
+  `}
 
   ${ProjectWrapper} {
-    margin: 3% 0;
+    margin: 3%;
     width: 100%;
 
     ${media.phablet`
@@ -17,7 +22,6 @@ export const ProjectGridWrapper = styled.div`
     `}
 
     ${media.desktop`
-      margin: 2%;
       width: 29.3%;
     `}
   }

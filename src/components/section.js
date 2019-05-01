@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "./theme"
 
 export const Section = styled.section`
   background-color: ${props => props.color && props.theme.colors[props.color]};
@@ -6,7 +7,11 @@ export const Section = styled.section`
     props.fullWidth ? "100%" : props.theme.content.maxWidth};
   width: 100%;
   margin: 0 auto;
-  padding: 0.5em 1em;
+  padding: 3%;
+
+  ${media.phablet`
+    padding: 2%;
+  `}
 `
 
 export default Section

@@ -49,11 +49,19 @@ module.exports = {
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-smartypants`,
           {
+            resolve: `gatsby-remark-images-grid`,
+            options: {
+              className: "gatsby-resp-image-grid",
+              gridGap: "1.5rem",
+              margin: "0 auto 1.5rem",
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               linkImagesToOriginal: false,
               tracedSVG: true,
-              maxWidth: 920,
+              maxWidth: 1200,
             },
           },
         ],
