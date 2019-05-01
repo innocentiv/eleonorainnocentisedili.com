@@ -7,6 +7,12 @@ const typography = new Typography({
   headerFontFamily: ["Raleway", "sans-serif"],
   bodyFontFamily: ["Raleway", "sans-serif"],
   includeNormalize: true,
+  googleFonts: [
+    {
+      name: "Raleway",
+      styles: ["400", "700"],
+    },
+  ],
 })
 
 export default typography
