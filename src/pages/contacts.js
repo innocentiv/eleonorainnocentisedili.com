@@ -1,15 +1,37 @@
 import React, { useState } from "react"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Button from "../components/button"
 
 const encode = data =>
   Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 
-const ContactsPage = () => {
+const TextDivider = styled.p`
+  margin: 5em 0;
+  color: ${props => props.theme.colors.gray};
+  font-style: italic;
+`
+
+const FieldRow = styled.p`
+  max-width: 520px;
+  margin: 0 auto 1em;
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 8em;
+  }
+`
+
+const UnstyledContactsPage = ({ className }) => {
   const [values, setValues] = useState({})
 
   const handleSubmit = event => {
@@ -36,9 +58,17 @@ const ContactsPage = () => {
   }
 
   return (
-    <Layout>
+    <Layout className={className}>
       <SEO title="Contatti" />
       <h1>Contatti</h1>
+      <p>
+        Puoi contattarmi al mio indirizzo e-mail{" "}
+        <a href="mailto:einnocentisedili@gmail.com">
+          einnocentisedili@gmail.com
+        </a>
+      </p>
+      <TextDivider>Oppure utilizza il modulo di contatto</TextDivider>
+      <h2>Modulo di contatto</h2>
       <form
         name="contact"
         method="post"
@@ -49,40 +79,46 @@ const ContactsPage = () => {
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
+        <FieldRow hidden>
           <label>
             Don’t fill this out:{" "}
             <input name="bot-field" onChange={handleChange} />
           </label>
-        </p>
-        <p>
+        </FieldRow>
+        <FieldRow>
           <label>
-            Your name:
+            Il tuo nome:
             <br />
             <input type="text" name="name" onChange={handleChange} />
           </label>
-        </p>
-        <p>
+        </FieldRow>
+        <FieldRow>
           <label>
-            Your email:
+            La tua email:
             <br />
             <input type="email" name="email" onChange={handleChange} />
           </label>
-        </p>
-        <p>
+        </FieldRow>
+        <FieldRow>
           <label>
-            Message:
+            Messaggio:
             <br />
             <textarea name="message" onChange={handleChange} />
           </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+        </FieldRow>
+        <FieldRow>
+          <Button type="submit">Invia</Button>
+        </FieldRow>
       </form>
-      <Link to="/">Vai all'homepage</Link>
     </Layout>
   )
 }
+
+const ContactsPage = styled(UnstyledContactsPage)`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
 
 export default ContactsPage

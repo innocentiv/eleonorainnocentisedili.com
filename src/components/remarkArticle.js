@@ -14,6 +14,12 @@ const RemarkArticle = styled.article`
   .gatsby-resp-image-grid .gatsby-resp-image-wrapper {
     max-width: 720px !important;
   }
+
+  blockquote {
+    padding-left: 0.8em;
+    border-left: 2px solid currentColor;
+    font-style: italic;
+  }
 `
 
 export default RemarkArticle

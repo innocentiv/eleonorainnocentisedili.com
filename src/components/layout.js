@@ -32,7 +32,7 @@ const SiteWrapper = styled.div`
   flex-direction: column;
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ children, className }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
         <SiteWrapper>
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
-          <Content>
+          <Content className={className}>
             <Section>{children}</Section>
           </Content>
           <Footer />

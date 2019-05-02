@@ -39,6 +39,7 @@ const theme = {
     maxWidth: "1200px",
   },
   colors: {
+    darkgray: "#272526",
     gray: "#7b7b7b",
     lightgray: "#b2b2b2",
     white: "#f5f5f5",
