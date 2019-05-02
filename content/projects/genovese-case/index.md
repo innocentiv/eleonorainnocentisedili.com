@@ -28,7 +28,7 @@ Esigenze di installazione variabili | Variable installation requirements
 ![genovese](genovese3.png)
 ```
 
-Il caso Genovese è un episodio di cronaca del 1964 riguardante l’omicidio di una giovane ragazza, Kitty Genovese. Venne ripetutamente accoltellata nel cortile del proprio isolato, a New York, senza che nessun vicino intervenisse. Le circostanze del suo assassinio e la mancata reazione da parte dei suoi vicini, divennero il simbolo di un fenomeno psicologico noto come effetto spettatore o sindrome Genovese.
+Il caso _Genovese_ è un **episodio** di **_cronaca_** del 1964 riguardante l’omicidio di una giovane ragazza, Kitty Genovese. Venne ripetutamente accoltellata nel cortile del proprio isolato, a New York, senza che nessun vicino intervenisse. Le circostanze del suo assassinio e la mancata reazione da parte dei suoi vicini, divennero il simbolo di un fenomeno psicologico noto come effetto spettatore o sindrome Genovese.
 In qualche modo, anche oggi assistiamo al medesimo fenomeno.
 
 ```grid|2
