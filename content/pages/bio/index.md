@@ -14,3 +14,5 @@ qualcosa fuori dall’ordinario. Volevo essere una scrittrice, un’attrice,
 una fotografa, una pittrice, una sociologa, una regista, una curatrice,
 una politologa, una stratega, una giornalista ma poi ho capito che essere
 un’artista oggi significava essere già un po’ tutto questo.
+
+[Scarica il mio CV](cv_eleonora_innocenti_sedili.pdf)
