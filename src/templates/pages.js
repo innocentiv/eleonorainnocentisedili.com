@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import RemarkArticle from "../components/remarkArticle"
 
 class PageTemplate extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class PageTemplate extends React.Component {
         />
         <h1>{frontmatter.title}</h1>
         {frontmatter.date && <p>{frontmatter.date}</p>}
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <RemarkArticle dangerouslySetInnerHTML={{ __html: html }} />
       </Layout>
     )
   }
