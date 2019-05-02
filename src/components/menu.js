@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { MdMenu, MdClose } from "react-icons/md"
+import { FaInstagram } from "react-icons/fa"
 import { media, mixin } from "./theme"
 import MenuItem from "./menuitem"
 
@@ -19,6 +20,13 @@ export const MenuWrapper = styled.nav`
     display: block;
     padding: 1em;
   }
+`
+
+export const MenubarExternalLink = styled.a`
+  color: ${props => props.theme.colors.lightgray};
+  display: block;
+  padding: 1em;
+  font-size: 150%;
 `
 
 export const MenuButton = styled.button`
@@ -53,6 +61,13 @@ const Menu = () => {
           <MenuItem to="/contacts">Contatti</MenuItem>
           <MenuItem to="/">Opere</MenuItem>
           <MenuItem to="/texts">Testi</MenuItem>
+          <MenubarExternalLink
+            href="https://www.instagram.com/eleonorainnocentisedili/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram aria-label="Instagram" />
+          </MenubarExternalLink>
         </MenuWrapper>
       )}
     </>
