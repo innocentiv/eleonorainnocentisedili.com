@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { useTranslation } from "react-i18next"
+import { useI18n } from "../hooks/useI18n"
 import { media } from "./theme"
 import MenuItem from "./menuitem"
 import { FaInstagram } from "react-icons/fa"
@@ -26,15 +26,14 @@ export const MenubarExternalLink = styled.a`
 `
 
 const Menubar = () => {
-  const { t, i18n } = useTranslation("header")
-  const lng = i18n.language
+  const { t, i18nUrl } = useI18n("menu")
 
   return (
     <MenubarWrapper>
-      <MenuItem to={`/${lng}/bio`}>{t("biography")}</MenuItem>
-      <MenuItem to={`/${lng}/contacts`}>{t("contacts")}</MenuItem>
-      <MenuItem to={`/${lng}/`}>{t("projects")}</MenuItem>
-      <MenuItem to={`/${lng}/texts`}>{t("texts")}</MenuItem>
+      <MenuItem to={i18nUrl("/bio")}>{t("biography")}</MenuItem>
+      <MenuItem to={i18nUrl("/contacts")}>{t("contacts")}</MenuItem>
+      <MenuItem to={i18nUrl("/")}>{t("projects")}</MenuItem>
+      <MenuItem to={i18nUrl("/texts")}>{t("texts")}</MenuItem>
       <MenubarExternalLink
         href="https://www.instagram.com/eleonorainnocentisedili/"
         target="_blank"
@@ -42,9 +41,6 @@ const Menubar = () => {
       >
         <FaInstagram aria-label="Instagram" />
       </MenubarExternalLink>
-      <button onClick={() => i18n.changeLanguage(lng === "en" ? "it" : "en")}>
-        Cambia lingua
-      </button>
     </MenubarWrapper>
   )
 }

@@ -8,5 +8,15 @@
     "projects": "Opere",
     "texts": "Testi",
     "contacts": "Contatti"
+  },
+  "contacts": {
+    "emailTitle": "Contatti",
+    "emailDescription": "Puoi contattarmi al mio indirizzo e-mail",
+    "moduleTitle": "Modulo di contatto",
+    "moduleDescription": "Oppure utilizza il modulo di contatto",
+    "moduleName": "Il tuo nome:",
+    "moduleEmail": "La tua email:",
+    "moduleMessage": "Messaggio:",
+    "send": "Invia"
   }
 }

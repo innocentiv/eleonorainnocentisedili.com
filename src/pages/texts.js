@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectGrid from "../components/projectGrid"
 
-const TextsPage = ({ data, pageContext }) => {
+const TextsPage = ({ data, ...pageContext }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
