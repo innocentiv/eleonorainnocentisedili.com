@@ -5,9 +5,9 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const UnstyledThanksPage = ({ className }) => {
+const UnstyledThanksPage = ({ className, ...pageContext}) => {
   return (
-    <Layout className={className}>
+    <Layout className={className} pageContext={pageContext}>
       <SEO title="Grazie" />
       <h1>Grazie per avermi contattato</h1>
       <p>Ti risponderò il prima possibile</p>

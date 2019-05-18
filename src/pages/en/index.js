@@ -1,23 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import IndexPage from "../index"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import ProjectGrid from "../../components/projectGrid"
+const IndexPageEn = props => <IndexPage {...props} />
 
-const IndexPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-
-  return (
-    <Layout>
-      <SEO title={siteTitle} keywords={[`gatsby`, `application`, `react`]} />
-      <ProjectGrid projects={posts} />
-    </Layout>
-  )
-}
-
-export default IndexPage
+export default IndexPageEn
 
 export const pageQuery = graphql`
   query {

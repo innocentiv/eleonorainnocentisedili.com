@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "copyright": "Work in progress - Eleonora Innocenti Sedili - 2019 - ",
+    "contacts": "Contacts"
+  },
+  "menu": {
+    "biography": "Bio",
+    "projects": "Projects",
+    "texts": "Texts",
+    "contacts": "Contacts"
+  },
+  "contacts": {
+    "emailTitle": "Contacts",
+    "emailDescription": "Get in touch by e-mail at",
+    "moduleTitle": "Contact form",
+    "moduleDescription": "or fill this form with your info",
+    "moduleName": "Your name:",
+    "moduleEmail": "Your e-mail:",
+    "moduleMessage": "Message:",
+    "send": "Send"
+  }
+}

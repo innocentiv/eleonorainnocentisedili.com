@@ -5,24 +5,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RemarkArticle from "../components/remarkArticle"
 
-class PageTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const { frontmatter, excerpt, html } = post
-    const siteTitle = this.props.data.site.siteMetadata.title
+const PageTemplate = ({data, ...pageContext}) => {
+  const post = data.markdownRemark
+  const { frontmatter, excerpt, html } = post
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={frontmatter.title}
-          description={frontmatter.description || excerpt}
-        />
-        <h1>{frontmatter.title}</h1>
-        {frontmatter.date && <p>{frontmatter.date}</p>}
-        <RemarkArticle dangerouslySetInnerHTML={{ __html: html }} />
-      </Layout>
-    )
-  }
+  return (
+    <Layout pageContext={pageContext}>
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || excerpt}
+      />
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.date && <p>{frontmatter.date}</p>}
+      <RemarkArticle dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
+  )
 }
 
 export default PageTemplate

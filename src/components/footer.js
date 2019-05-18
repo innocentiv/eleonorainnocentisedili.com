@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { useI18n } from "../hooks/useI18n"
 
 export const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.colors.lightgray};
@@ -9,11 +10,15 @@ export const FooterWrapper = styled.footer`
   font-size: 0.8rem;
 `
 
-const Footer = () => (
-  <FooterWrapper>
-    Work in progress - Eleonora Innocenti Sedili - 2019 -{" "}
-    <Link to={"/contacts"}>Contatti</Link>
-  </FooterWrapper>
-)
+const Footer = () => {
+  const { t, i18nUrl } = useI18n("footer")
+
+  return (
+    <FooterWrapper>
+      {t("copyright")}
+      <Link to={i18nUrl("/contacts")}>{t("contacts")}</Link>
+    </FooterWrapper>
+  )
+}
 
 export default Footer

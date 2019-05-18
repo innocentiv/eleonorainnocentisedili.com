@@ -5,22 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RemarkArticle from "../components/remarkArticle"
 
-class ProjectTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const { frontmatter, excerpt, html } = post
-    const siteTitle = this.props.data.site.siteMetadata.title
+const ProjectTemplate = ({data, ...pageContext}) => {
+  const post = data.markdownRemark
+  const { frontmatter, excerpt, html } = post
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={frontmatter.title}
-          description={frontmatter.description || excerpt}
-        />
-        <RemarkArticle dangerouslySetInnerHTML={{ __html: html }} />
-      </Layout>
-    )
-  }
+  return (
+    <Layout pageContext={pageContext}>
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || excerpt}
+      />
+      <RemarkArticle dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
+  )
 }
 
 export default ProjectTemplate
