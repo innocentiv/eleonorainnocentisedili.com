@@ -4,6 +4,7 @@ import { MdMenu, MdClose } from "react-icons/md"
 import { FaInstagram } from "react-icons/fa"
 import { media, mixin } from "./theme"
 import MenuItem from "./menuitem"
+import useI18n from "../hooks/useI18n"
 
 export const MenuWrapper = styled.nav`
   position: absolute;
@@ -46,6 +47,8 @@ export const MenuButton = styled.button`
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { t, i18nUrl } = useI18n("menu")
+
   return (
     <>
       <MenuButton onClick={() => setMenuOpen(!menuOpen)}>
@@ -57,10 +60,10 @@ const Menu = () => {
       </MenuButton>
       {menuOpen && (
         <MenuWrapper>
-          <MenuItem to="/bio">Bio</MenuItem>
-          <MenuItem to="/contacts">Contatti</MenuItem>
-          <MenuItem to="/">Opere</MenuItem>
-          <MenuItem to="/texts">Testi</MenuItem>
+          <MenuItem to={i18nUrl("/bio")}>{t("biography")}</MenuItem>
+          <MenuItem to={i18nUrl("/contacts")}>{t("contacts")}</MenuItem>
+          <MenuItem to={i18nUrl("/")}>{t("projects")}</MenuItem>
+          <MenuItem to={i18nUrl("/texts")}>{t("texts")}</MenuItem>
           <MenubarExternalLink
             href="https://www.instagram.com/eleonorainnocentisedili/"
             target="_blank"

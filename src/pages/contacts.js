@@ -31,7 +31,7 @@ const FieldRow = styled.p`
   }
 `
 
-const UnstyledContactsPage = ({ className }) => {
+const UnstyledContactsPage = ({ className, ...pageContext }) => {
   const [values, setValues] = useState({})
 
   const handleSubmit = event => {
@@ -58,7 +58,7 @@ const UnstyledContactsPage = ({ className }) => {
   }
 
   return (
-    <Layout className={className}>
+    <Layout className={className} pageContext={pageContext}>
       <SEO title="Contatti" />
       <h1>Contatti</h1>
       <p>

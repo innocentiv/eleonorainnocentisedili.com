@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import "../i18n"
+import PageContext from "../utils/pageContext"
 import theme from "./theme"
 
 import Header from "./header"
@@ -33,7 +34,7 @@ const SiteWrapper = styled.div`
   flex-direction: column;
 `
 
-const Layout = ({ children, className }) => (
+const Layout = ({ children, className, pageContext }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -45,16 +46,18 @@ const Layout = ({ children, className }) => (
       }
     `}
     render={data => (
-      <ThemeProvider theme={theme}>
-        <SiteWrapper>
-          <GlobalStyle />
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <Content className={className}>
-            <Section>{children}</Section>
-          </Content>
-          <Footer />
-        </SiteWrapper>
-      </ThemeProvider>
+      <PageContext.Provider value={pageContext}>
+        <ThemeProvider theme={theme}>
+          <SiteWrapper>
+            <GlobalStyle />
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <Content className={className}>
+              <Section>{children}</Section>
+            </Content>
+            <Footer />
+          </SiteWrapper>
+        </ThemeProvider>
+      </PageContext.Provider>
     )}
   />
 )
