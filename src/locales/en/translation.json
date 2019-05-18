@@ -1,4 +1,7 @@
 {
+  "core": {
+    "changeLanguage": "visita il sito in italiano"
+  },
   "footer": {
     "copyright": "Work in progress - Eleonora Innocenti Sedili - 2019 - ",
     "contacts": "Contacts"

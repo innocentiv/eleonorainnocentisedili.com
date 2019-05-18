@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { useI18n } from "../hooks/useI18n"
+import LanguageSwitcher from "./languageSwitcher"
 
 export const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.colors.lightgray};
@@ -17,6 +18,7 @@ const Footer = () => {
     <FooterWrapper>
       {t("copyright")}
       <Link to={i18nUrl("/contacts")}>{t("contacts")}</Link>
+      <LanguageSwitcher />
     </FooterWrapper>
   )
 }

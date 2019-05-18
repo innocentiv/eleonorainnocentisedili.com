@@ -1,4 +1,7 @@
 {
+  "core": {
+    "changeLanguage": "go to the english website"
+  },
   "footer": {
     "copyright": "Lavori in corso - Eleonora Innocenti Sedili - 2019 - ",
     "contacts": "Contatti"
