@@ -3,7 +3,6 @@ title: Genovese
 date: "2018-08-06T23:46:37.121Z"
 description: ""
 image: "genovese1.png"
-category: ["installation"]
 ---
 
 ```grid|2|Genovese Images
@@ -11,8 +10,8 @@ category: ["installation"]
 ![genovese](genovese2.png)
 ```
 
-Installazione | Installation
-Esigenze di installazione variabili | Variable installation requirements
+Installazione | Installation  
+Esigenze di installazione variabili
 16 distrutti | destroyed
 
 ![genovese](genovese1.png)
